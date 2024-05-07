@@ -3,7 +3,7 @@
 `react-moving-mesh` is a React component that animates a number of vertices connected by lines, creating a dynamic, moving mesh effect.
 
 - Demo app source code : [https://github.com/stujo/react-moving-mesh-demo](https://github.com/stujo/react-moving-mesh-demo)
-- Demo app live : [https://react-moving-mesh-demo.vercel.app/](https://github.com/stujo/react-moving-mesh-demo)
+- Demo app live : [https://react-moving-mesh-demo.vercel.app/](https://react-moving-mesh-demo.vercel.app/)
 
 ## Installation
 
