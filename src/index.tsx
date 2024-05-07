@@ -249,7 +249,6 @@ const MovingMesh = (props: MmSettingsPublic) => {
   useEffect(() => {
     const observeTarget = ref.current;
     const resizeObserver = new ResizeObserver((entries) => {
-      console.log(`ResizeObserver: ${entries.length}`, entries);
       entries.forEach((entry) => {
         setDimensions({
           width: entry.contentRect.width,
