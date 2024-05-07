@@ -2,6 +2,10 @@
 
 `react-moving-mesh` is a React component that animates a number of vertices connected by lines, creating a dynamic, moving mesh effect.
 
+- Demo app source code : [https://github.com/stujo/react-moving-mesh-demo](https://github.com/stujo/react-moving-mesh-demo)
+- Demo app live : [https://react-moving-mesh-demo.vercel.app/](https://github.com/stujo/react-moving-mesh-demo)
+  Demo App:
+
 ## Installation
 
 You can install `react-moving-mesh` from npm:
@@ -48,6 +52,10 @@ Here are the props you can use to customize the MovingMesh component:
 - `lineStroke`: Stroke color of the connecting lines. Default value is "white".
 - `lineStrokeWidth`: Stroke width of the connecting lines. Default value is 2.
 - `gravity`: Gravity applied to the vertices. Default value is 0.
+
+## Screenshot
+
+![Screenshot](./docs/screenshot.png)
 
 ## Contributing
 
