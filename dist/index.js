@@ -23,6 +23,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const jsx_runtime_1 = require("react/jsx-runtime");
 const react_1 = __importStar(require("react"));
 const buildVertex = (maxX, maxY, settings) => {
     const velocity = settings.velocity;
@@ -70,10 +71,10 @@ const tickMesh = (mesh, settings) => {
         }) });
 };
 const connectingLineSvg = (v, nextVertex, index, settings) => {
-    return (<line key={index} x1={v.x} y1={v.y} x2={nextVertex.x} y2={nextVertex.y} stroke={settings.lineStroke} strokeWidth={settings.lineStrokeWidth}/>);
+    return ((0, jsx_runtime_1.jsx)("line", { x1: v.x, y1: v.y, x2: nextVertex.x, y2: nextVertex.y, stroke: settings.lineStroke, strokeWidth: settings.lineStrokeWidth }, index));
 };
 const vertexSvg = (v, index, settings) => {
-    return (<circle key={index} cx={v.x} cy={v.y} r={v.r} fill={settings.vertexFill} stroke={settings.vertexStroke} strokeWidth={settings.vertexStrokeWidth}/>);
+    return ((0, jsx_runtime_1.jsx)("circle", { cx: v.x, cy: v.y, r: v.r, fill: settings.vertexFill, stroke: settings.vertexStroke, strokeWidth: settings.vertexStrokeWidth }, index));
 };
 // Declare default props
 const defaultProps = {
@@ -139,14 +140,10 @@ const MovingMesh = (props) => {
             cancelAnimationFrame(animationFrameRef.current);
         };
     }, []);
-    return (<svg ref={ref} width="100%" height="100%" preserveAspectRatio="none">
-      {mesh === null || mesh === void 0 ? void 0 : mesh.vertices.map((v, i) => {
-            return connectingLineSvg(v, mesh.vertices[(i + 1) % mesh.vertices.length], i, settings.current);
-        })}
-      {mesh === null || mesh === void 0 ? void 0 : mesh.vertices.map((v, i) => {
-            return connectingLineSvg(v, mesh.vertices[(i + 2) % mesh.vertices.length], i, settings.current);
-        })}
-      {mesh === null || mesh === void 0 ? void 0 : mesh.vertices.map((v, i) => vertexSvg(v, i, settings.current))}
-    </svg>);
+    return ((0, jsx_runtime_1.jsxs)("svg", { ref: ref, width: "100%", height: "100%", preserveAspectRatio: "none", children: [mesh === null || mesh === void 0 ? void 0 : mesh.vertices.map((v, i) => {
+                return connectingLineSvg(v, mesh.vertices[(i + 1) % mesh.vertices.length], i, settings.current);
+            }), mesh === null || mesh === void 0 ? void 0 : mesh.vertices.map((v, i) => {
+                return connectingLineSvg(v, mesh.vertices[(i + 2) % mesh.vertices.length], i, settings.current);
+            }), mesh === null || mesh === void 0 ? void 0 : mesh.vertices.map((v, i) => vertexSvg(v, i, settings.current))] }));
 };
 exports.default = MovingMesh;

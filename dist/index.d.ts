@@ -1,4 +1,3 @@
-import React from "react";
 /**
  * Props for the MovingMesh component.
  */
@@ -70,5 +69,6 @@ export interface MmSettings {
     gravity: number;
 }
 type MmSettingsPublic = Partial<MmSettings>;
-declare const MovingMesh: (props: MmSettingsPublic) => React.JSX.Element;
+declare const MovingMesh: (props: MmSettingsPublic) => import("react/jsx-runtime").JSX.Element;
 export default MovingMesh;
+//# sourceMappingURL=index.d.ts.map
