@@ -23,7 +23,7 @@
   "author": "stujo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stujo/react-moving-mesh.git"
+    "url": "git+https://github.com/stujo/react-moving-mesh.git"
   },
   "license": "MIT",
   "devDependencies": {
