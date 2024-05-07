@@ -1,8 +1,8 @@
 {
   "name": "react-moving-mesh",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Animated SVG React Component with moving verticies connected with lines",
-  "main": "dist/index.jsx",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"

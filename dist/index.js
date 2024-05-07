@@ -147,3 +147,4 @@ const MovingMesh = (props) => {
             }), mesh === null || mesh === void 0 ? void 0 : mesh.vertices.map((v, i) => vertexSvg(v, i, settings.current))] }));
 };
 exports.default = MovingMesh;
+//# sourceMappingURL=index.js.map
