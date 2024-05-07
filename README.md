@@ -4,7 +4,6 @@
 
 - Demo app source code : [https://github.com/stujo/react-moving-mesh-demo](https://github.com/stujo/react-moving-mesh-demo)
 - Demo app live : [https://react-moving-mesh-demo.vercel.app/](https://github.com/stujo/react-moving-mesh-demo)
-  Demo App:
 
 ## Installation
 
